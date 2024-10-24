@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PathActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Маршрут"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <EditText
+            android:id="@+id/editTextStartPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Начало маршрута" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <EditText
+            android:id="@+id/editTextEndPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Конец маршрута" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <EditText
+            android:id="@+id/editTextDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Дистанция" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Время" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Цена" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <EditText
+            android:id="@+id/editTextCarType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Тип машины" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ОК" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Автор"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="ДИМА КАШПИР АС-64"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
